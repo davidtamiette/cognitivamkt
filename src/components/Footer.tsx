@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <a href="#" className="text-2xl font-bold text-gradient inline-block mb-4">
-              AI<span className="ml-1">Marketing</span>
+              Cognitiva<span className="ml-1">Marketing</span>
             </a>
             <p className="text-muted-foreground mb-6">
               Transformando estratégias de marketing com inteligência artificial avançada para resultados extraordinários.
@@ -80,25 +80,25 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-secondary mr-3 mt-0.5" />
                 <span className="text-muted-foreground">
-                  Av. Paulista, 1000, São Paulo, SP
+                  R. Manoel Teixeira de Camargos, 640 - Eldorado, Contagem - MG, 32340-040
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-secondary mr-3" />
                 <a 
-                  href="tel:+551198765432" 
+                  href="tel:+5531920048663" 
                   className="text-muted-foreground hover:text-secondary transition-colors"
                 >
-                  (11) 9876-5432
+                  +55 (31) 92004-8663
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-secondary mr-3" />
                 <a 
-                  href="mailto:contato@aimarketing.com.br" 
+                  href="mailto:contato@cognitivamkt.com.br" 
                   className="text-muted-foreground hover:text-secondary transition-colors"
                 >
-                  contato@aimarketing.com.br
+                  contato@cognitivamkt.com.br
                 </a>
               </li>
             </ul>
@@ -108,7 +108,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} AI Marketing. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} Cognitiva Marketing. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
