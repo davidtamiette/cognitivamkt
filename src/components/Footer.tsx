@@ -1,0 +1,126 @@
+
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-50 pt-16 pb-8 px-4 md:px-8">
+      <div className="container max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="#" className="text-2xl font-bold text-gradient inline-block mb-4">
+              AI<span className="ml-1">Marketing</span>
+            </a>
+            <p className="text-muted-foreground mb-6">
+              Transformando estratégias de marketing com inteligência artificial avançada para resultados extraordinários.
+            </p>
+            <div className="flex space-x-4">
+              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Navegação</h3>
+            <ul className="space-y-3">
+              {[
+                { name: "Início", href: "#" },
+                { name: "Serviços", href: "#services" },
+                { name: "Diferenciais", href: "#features" },
+                { name: "Depoimentos", href: "#testimonials" },
+                { name: "Contato", href: "#contact" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <a 
+                    href={item.href} 
+                    className="text-muted-foreground hover:text-secondary transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Serviços</h3>
+            <ul className="space-y-3">
+              {[
+                "SEO com IA",
+                "Marketing de Conteúdo",
+                "Chatbots Inteligentes",
+                "Analytics Preditivo",
+                "Campanhas Inteligentes",
+                "Email Marketing Avançado"
+              ].map((item) => (
+                <li key={item}>
+                  <a 
+                    href="#services" 
+                    className="text-muted-foreground hover:text-secondary transition-colors"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Contato</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 text-secondary mr-3 mt-0.5" />
+                <span className="text-muted-foreground">
+                  Av. Paulista, 1000, São Paulo, SP
+                </span>
+              </li>
+              <li className="flex items-center">
+                <Phone className="h-5 w-5 text-secondary mr-3" />
+                <a 
+                  href="tel:+551198765432" 
+                  className="text-muted-foreground hover:text-secondary transition-colors"
+                >
+                  (11) 9876-5432
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 text-secondary mr-3" />
+                <a 
+                  href="mailto:contato@aimarketing.com.br" 
+                  className="text-muted-foreground hover:text-secondary transition-colors"
+                >
+                  contato@aimarketing.com.br
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="pt-8 border-t border-gray-200">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} AI Marketing. Todos os direitos reservados.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
+                Política de Privacidade
+              </a>
+              <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
+                Termos de Uso
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
