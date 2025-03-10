@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -28,7 +27,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="text-2xl font-bold text-gradient">
-            AI<span className="ml-1">Marketing</span>
+            Cognitiva<span className="ml-1">Marketing</span>
           </a>
         </div>
 
@@ -71,7 +70,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 px-4 animation-slide-down">
           <div className="flex flex-col space-y-4">

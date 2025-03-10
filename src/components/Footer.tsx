@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -7,30 +6,32 @@ export default function Footer() {
       <div className="container max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <a href="#" className="text-2xl font-bold text-gradient inline-block mb-4">
+            <a href="#" className="text-3xl font-bold text-gradient inline-block mb-4">
               Cognitiva<span className="ml-1">Marketing</span>
             </a>
             <p className="text-muted-foreground mb-6">
               Transformando estratégias de marketing com inteligência artificial avançada para resultados extraordinários.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
+              {[
+                { Icon: Facebook, href: "#" },
+                { Icon: Instagram, href: "#" },
+                { Icon: Twitter, href: "#" },
+                { Icon: Linkedin, href: "#" },
+              ].map(({ Icon, href }) => (
+                <a 
+                  key={Icon.name}
+                  href={href} 
+                  className="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center hover:bg-secondary hover:text-white transition-colors"
+                >
+                  <Icon className="h-6 w-6" />
+                </a>
+              ))}
             </div>
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Navegação</h3>
+            <h3 className="font-semibold text-xl mb-6">Navegação</h3>
             <ul className="space-y-3">
               {[
                 { name: "Início", href: "#" },
@@ -52,7 +53,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Serviços</h3>
+            <h3 className="font-semibold text-xl mb-6">Serviços</h3>
             <ul className="space-y-3">
               {[
                 "SEO com IA",
@@ -75,16 +76,16 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contato</h3>
+            <h3 className="font-semibold text-xl mb-6">Contato</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-secondary mr-3 mt-0.5" />
+                <MapPin className="h-6 w-6 text-secondary mr-3 mt-0.5" />
                 <span className="text-muted-foreground">
                   R. Manoel Teixeira de Camargos, 640 - Eldorado, Contagem - MG, 32340-040
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 text-secondary mr-3" />
+                <Phone className="h-6 w-6 text-secondary mr-3" />
                 <a 
                   href="tel:+5531920048663" 
                   className="text-muted-foreground hover:text-secondary transition-colors"
@@ -93,7 +94,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center">
-                <Mail className="h-5 w-5 text-secondary mr-3" />
+                <Mail className="h-6 w-6 text-secondary mr-3" />
                 <a 
                   href="mailto:contato@cognitivamkt.com.br" 
                   className="text-muted-foreground hover:text-secondary transition-colors"
