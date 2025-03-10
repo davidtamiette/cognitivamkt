@@ -1,15 +1,12 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Zap, Sparkles, PieChart } from "lucide-react";
-
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
-  
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1
     };
-
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-slide-up');
@@ -18,24 +15,17 @@ export default function Hero() {
         }
       });
     }, observerOptions);
-
     const elements = heroRef.current?.querySelectorAll('.reveal');
     elements?.forEach(el => {
       observer.observe(el);
     });
-
     return () => {
       elements?.forEach(el => {
         observer.unobserve(el);
       });
     };
   }, []);
-
-  return (
-    <div
-      ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-4 md:px-8"
-    >
+  return <div ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-4 md:px-8">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-50 to-white"></div>
         <div className="absolute top-1/4 -left-48 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
@@ -64,35 +54,16 @@ export default function Hero() {
             </p>
 
             <div className="reveal opacity-0 flex flex-col sm:flex-row gap-4 pt-4">
-              <a
-                href="#contact"
-                className="btn-shine inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium transition-all transform hover:scale-105"
-              >
+              <a href="#contact" className="btn-shine inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-md font-medium transition-all transform hover:scale-105">
                 Comece Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center border border-input bg-background hover:bg-muted px-6 py-3 rounded-md font-medium"
-              >
+              <a href="#services" className="inline-flex items-center justify-center border border-input bg-background hover:bg-muted px-6 py-3 rounded-md font-medium">
                 Conheça Nossos Serviços
               </a>
             </div>
 
-            <div className="reveal opacity-0 grid grid-cols-3 gap-4 pt-8">
-              <div className="text-center">
-                <div className="font-bold text-2xl md:text-3xl">98%</div>
-                <div className="text-sm text-muted-foreground">Satisfação</div>
-              </div>
-              <div className="text-center">
-                <div className="font-bold text-2xl md:text-3xl">100+</div>
-                <div className="text-sm text-muted-foreground">Clientes</div>
-              </div>
-              <div className="text-center">
-                <div className="font-bold text-2xl md:text-3xl">300%</div>
-                <div className="text-sm text-muted-foreground">ROI Médio</div>
-              </div>
-            </div>
+            
           </div>
 
           <div className="relative h-[480px] reveal opacity-0">
@@ -137,6 +108,5 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 }
