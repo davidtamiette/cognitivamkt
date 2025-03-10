@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -45,11 +44,11 @@ export default function CTA() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Pronto para transformar seu <span className="text-gradient">Marketing Digital</span>?
+                  Pronto para expandir seu negócio no <span className="text-gradient">mercado americano</span>?
                 </h2>
                 <p className="text-lg text-gray-800 mb-8">
-                  Agende uma consultoria gratuita e descubra como nossa abordagem 
-                  inovadora com IA pode impulsionar seu negócio.
+                  Agende uma consultoria gratuita e descubra como nossa tecnologia pode 
+                  ajudar sua empresa a crescer nos Estados Unidos.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -71,23 +70,23 @@ export default function CTA() {
               
               <div className="space-y-6">
                 <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50 transform hover:scale-105 transition-transform">
-                  <h3 className="font-semibold text-xl mb-2">Análise Gratuita</h3>
+                  <h3 className="font-semibold text-xl mb-2">Análise de Mercado</h3>
                   <p className="text-gray-600">
-                    Receba uma análise completa da sua presença digital atual e oportunidades de crescimento.
+                    Entenda as oportunidades para seu negócio no mercado americano com análise detalhada.
                   </p>
                 </div>
                 
                 <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50 transform hover:scale-105 transition-transform">
                   <h3 className="font-semibold text-xl mb-2">Estratégia Personalizada</h3>
                   <p className="text-gray-600">
-                    Desenvolvemos um plano de ação exclusivo baseado nos objetivos do seu negócio.
+                    Plano de ação focado no seu segmento e no público brasileiro nos EUA.
                   </p>
                 </div>
                 
                 <div className="bg-white bg-opacity-70 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/50 transform hover:scale-105 transition-transform">
-                  <h3 className="font-semibold text-xl mb-2">Implementação Rápida</h3>
+                  <h3 className="font-semibold text-xl mb-2">Resultados Rápidos</h3>
                   <p className="text-gray-600">
-                    Colocamos nossa tecnologia para trabalhar por você em questão de dias, não meses.
+                    Aumente suas vendas no mercado americano em questão de semanas, não meses.
                   </p>
                 </div>
               </div>

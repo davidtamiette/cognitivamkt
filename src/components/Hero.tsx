@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { ArrowRight, Zap, Sparkles, PieChart } from "lucide-react";
 
@@ -37,7 +36,6 @@ export default function Hero() {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-4 md:px-8"
     >
-      {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-50 to-white"></div>
         <div className="absolute top-1/4 -left-48 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
@@ -47,23 +45,22 @@ export default function Hero() {
 
       <div className="container max-w-7xl mx-auto z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left column */}
           <div className="space-y-8">
             <div className="reveal opacity-0">
               <div className="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-subtle mb-6">
                 <Sparkles className="h-4 w-4 text-secondary" />
-                <span className="text-sm font-medium">Revolucionando o Marketing Digital</span>
+                <span className="text-sm font-medium">Marketing Digital Brasil-EUA</span>
               </div>
             </div>
 
             <h1 className="reveal opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Marketing Inteligente com <br />
-              <span className="text-gradient">IA Avançada</span>
+              Impulsione seu Negócio <br />
+              <span className="text-gradient">nos Estados Unidos</span>
             </h1>
 
             <p className="reveal opacity-0 text-lg md:text-xl text-muted-foreground max-w-xl">
-              Transforme sua estratégia digital com nossa abordagem inovadora 
-              que combina expertise em marketing e inteligência artificial de ponta.
+              Marketing inteligente com IA para empresários brasileiros conquistarem 
+              mais clientes e expandirem seus negócios no mercado americano.
             </p>
 
             <div className="reveal opacity-0 flex flex-col sm:flex-row gap-4 pt-4">
@@ -98,7 +95,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right column */}
           <div className="relative h-[480px] reveal opacity-0">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-white rounded-2xl shadow-2xl overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-10 bg-gray-100 flex items-center px-4">
@@ -129,7 +125,6 @@ export default function Hero() {
               </div>
             </div>
             
-            {/* Floating elements */}
             <div className="absolute top-10 right-0 w-20 h-20 rounded-lg bg-secondary/20 backdrop-blur-sm border border-secondary/30 flex items-center justify-center animate-float shadow-lg">
               <Zap className="h-10 w-10 text-secondary" />
             </div>

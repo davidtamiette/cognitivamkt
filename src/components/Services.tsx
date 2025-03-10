@@ -67,38 +67,38 @@ export default function Services() {
 
   const services = [
     {
-      title: "SEO com IA",
-      description: "Otimização avançada para mecanismos de busca utilizando algoritmos de inteligência artificial.",
+      title: "SEO Localizado EUA",
+      description: "Otimização para mecanismos de busca focada no público americano e brasileiro nos EUA.",
       icon: <Search className="h-6 w-6 text-secondary" />,
       delay: 100
     },
     {
-      title: "Marketing de Conteúdo",
-      description: "Estratégias de conteúdo personalizado com análise preditiva para engajamento máximo.",
+      title: "Marketing Bilíngue",
+      description: "Estratégias de conteúdo personalizado em português e inglês para maior alcance.",
       icon: <Layers className="h-6 w-6 text-secondary" />,
       delay: 200
     },
     {
-      title: "Chatbots Inteligentes",
-      description: "Assistentes virtuais que combinam NLP avançado com estratégias de conversão.",
+      title: "Automação de Vendas",
+      description: "Chatbots inteligentes em português e inglês para atendimento 24/7 e conversão.",
       icon: <MessageSquare className="h-6 w-6 text-secondary" />,
       delay: 300
     },
     {
       title: "Analytics Preditivo",
-      description: "Análise de dados avançada para prever tendências e comportamentos do consumidor.",
+      description: "Análise avançada do comportamento do consumidor brasileiro nos EUA.",
       icon: <BarChart className="h-6 w-6 text-secondary" />,
       delay: 400
     },
     {
-      title: "Campanhas Inteligentes",
-      description: "Anúncios automatizados com otimização contínua baseada em machine learning.",
+      title: "Campanhas Locais",
+      description: "Anúncios direcionados para comunidades brasileiras em diferentes regiões dos EUA.",
       icon: <TrendingUp className="h-6 w-6 text-secondary" />,
       delay: 500
     },
     {
-      title: "Email Marketing Avançado",
-      description: "Segmentação dinâmica e personalização em tempo real com algoritmos de IA.",
+      title: "Email Marketing",
+      description: "Comunicação segmentada e personalizada para sua base de clientes nos EUA.",
       icon: <Mail className="h-6 w-6 text-secondary" />,
       delay: 600
     }
@@ -112,11 +112,11 @@ export default function Services() {
             <span className="text-sm font-medium">Nossos Serviços</span>
           </div>
           <h2 className="reveal opacity-0 text-3xl md:text-4xl font-bold mb-4">
-            Soluções de Marketing com <span className="text-gradient">Inteligência Artificial</span>
+            Marketing Inteligente para o <span className="text-gradient">Mercado Americano</span>
           </h2>
           <p className="reveal opacity-0 text-lg text-muted-foreground">
-            Nossa equipe combina expertise em marketing digital com tecnologias avançadas 
-            de IA para impulsionar seus resultados.
+            Desenvolvemos estratégias sob medida para empresários brasileiros 
+            que querem expandir seus negócios nos Estados Unidos.
           </p>
         </div>
 
