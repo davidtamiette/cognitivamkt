@@ -116,7 +116,8 @@
   
   .btn-shine::after {
     content: '';
-    @apply absolute top-0 -left-[100%] w-full h-full bg-white bg-opacity-20 transform skew(-20deg);
+    @apply absolute top-0 -left-[100%] w-full h-full bg-white bg-opacity-20;
+    transform: skew(-20deg);
     animation: shine 3s infinite;
   }
   
