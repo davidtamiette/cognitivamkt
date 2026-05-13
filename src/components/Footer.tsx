@@ -1,5 +1,5 @@
-
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -113,12 +113,12 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Cognitiva Marketing. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
+              <Link to="/privacidade" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
                 Política de Privacidade
-              </a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
+              </Link>
+              <Link to="/termos" className="text-sm text-muted-foreground hover:text-secondary transition-colors">
                 Termos de Uso
-              </a>
+              </Link>
             </div>
           </div>
         </div>
