@@ -2,13 +2,12 @@
   "$schema": "https://schema.railpack.com",
   "provider": "node",
   "packages": {
-    "node": "20",
     "bun": "latest"
   },
-  "build": {
-    "command": "bun install && bun run build"
+  "install": {
+    "command": "bun install"
   },
-  "deploy": {
-    "startCommand": "bunx serve -s dist -l $PORT"
+  "build": {
+    "command": "bun run build"
   }
 }
